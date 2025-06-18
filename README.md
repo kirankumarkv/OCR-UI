@@ -53,15 +53,4 @@ python app.py
 4. Click "Extract Text"
 5. View results and download as needed
 
-   Project Structure
-OCR-UI/
-├── app.py                # Flask application entry point
-├── config.py             # Configuration settings
-├── ocr_engine/           # OCR processing modules
-│   ├── __init__.py
-│   ├── image_processing.py
-│   └── text_extraction.py
-├── static/               # Static files (CSS, JS, images)
-├── templates/            # HTML templates
-├── requirements.txt      # Python dependencies
-└── tests/                # Unit tests
+ 
