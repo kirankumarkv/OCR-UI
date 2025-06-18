@@ -34,3 +34,34 @@ A user-friendly web interface for Optical Character Recognition (OCR) built with
    ```bash
    git clone https://github.com/kirankumarkv/OCR-UI.git
    cd OCR-UI
+
+2. Install Dependencies
+pip install -r requirements.txt
+
+3. Configure Tesseract path in config.py if not in system PATH:
+TESSERACT_PATH = "/usr/local/bin/tesseract"  # Update this path
+
+4. Run the application:
+python app.py
+
+5. Access the UI at http://localhost:5000
+
+**Usage**
+1. Upload an image or PDF file
+2. Select preprocessing options
+3. Adjust OCR parameters (language, page segmentation mode)
+4. Click "Extract Text"
+5. View results and download as needed
+
+   Project Structure
+OCR-UI/
+├── app.py                # Flask application entry point
+├── config.py             # Configuration settings
+├── ocr_engine/           # OCR processing modules
+│   ├── __init__.py
+│   ├── image_processing.py
+│   └── text_extraction.py
+├── static/               # Static files (CSS, JS, images)
+├── templates/            # HTML templates
+├── requirements.txt      # Python dependencies
+└── tests/                # Unit tests
